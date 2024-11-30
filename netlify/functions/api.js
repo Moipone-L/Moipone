@@ -7,27 +7,16 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-
-app.get('/', (req, res) => {
-    res.send({ message: "Hello from Express!" });
-});
-
-// netlify/functions/api.js
 exports.handler = async (event, context) => {
-  return {
-      statusCode: 200,
-      body: JSON.stringify({ message: "Hello from Netlify Functions!" }),
-  };
+    return {
+        statusCode: 200,
+        body: JSON.stringify({ message: "Hello from Netlify Functions!" }),
+    };
 };
 
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
-});
-
+const PORT = 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 // Add a new product
 app.post('/products', (req, res) => {
