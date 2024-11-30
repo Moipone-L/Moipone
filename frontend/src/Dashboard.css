@@ -1,0 +1,108 @@
+/* Dashboard.css */
+
+/* Background Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://source.unsplash.com/1600x900/?technology,abstract');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #f9f9f9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Container Styling */
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 8px 0;
+  color: #eeeeee;
+}
+
+/* Key Metrics Section */
+#key-metrics {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Metrics Styling */
+#p1 {
+  font-size: 1.2em;
+  color: #f1f1f1;
+}
+
+#key {
+  color: #f9f9f9;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Chart Section */
+div[style*="height: 400px"] {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Recharts Bar Styling */
+.recharts-bar-rectangle {
+  border-radius: 4px;
+}
+
+.recharts-legend-wrapper {
+  font-size: 1em;
+  color: #333333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  div[style*="height: 400px"] {
+    padding: 15px;
+  }
+}
